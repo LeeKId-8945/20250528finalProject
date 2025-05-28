@@ -4,9 +4,9 @@
     "private": true,
     "scripts": {
         "dev": "bun --bun next dev --turbopack",
-        "build": "next build",
         "start": "next start",
         "lint": "next lint",
+        "build": "bunx prisma generate && bun run next build",
         "postinstall": "bunx prisma generate"
     },
     "dependencies": {
